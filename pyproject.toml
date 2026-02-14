@@ -1,10 +1,10 @@
 [project]
-name = "hetzner-dns-updater"
+name = "hetzner-dynamic-dns"
 version = "0.1.0"
-description = "DNS updater for hetzner console"
+description = "Update Hetzner DNS A records with the current public IP address."
 requires-python = ">=3.14"
 dependencies = [
     "black>=26.1.0",
     "python-dotenv>=1.2.1",
-    "requests==2.32.5",
+    "requests>=2.32.5",
 ]
