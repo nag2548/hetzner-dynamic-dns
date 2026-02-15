@@ -54,7 +54,7 @@ Fill in:
 Using `uv`:
 
 ```bash
-uv sync
+uv sync --no-dev
 ```
 
 This prepares the project environment ahead of time so the cron job doesn’t download/install packages at runtime.
@@ -64,7 +64,7 @@ This prepares the project environment ahead of time so the cron job doesn’t do
 From the project directory:
 
 ```bash
-uv run python -m src.hetzner_dynamic_dns
+uv run --no-dev python -m src.hetzner_dynamic_dns
 ```
 
 ### 5) Add a cron job
@@ -78,7 +78,7 @@ crontab -e
 Example: run every 5 minutes and write logs to a file:
 
 ```bash
-*/5 * * * * cd /absolute/path/to/hetzner-dynamic-dns && /absolute/path/to/uv run python -m src.hetzner_dynamic_dns
+*/5 * * * * cd /absolute/path/to/hetzner-dynamic-dns && /absolute/path/to/uv run --no-dev python -m src.hetzner_dynamic_dns
 ```
 
 Notes:
