@@ -46,7 +46,7 @@ def main():
         None,
     )
     if zone_id is None:
-        logger.info("Zone not found")
+        logger.error("Zone not found")
         return 1
 
     logger.info("Zone id: %s", zone_id)
