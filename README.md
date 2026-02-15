@@ -1,13 +1,12 @@
 # hetzner-dynamic-dns
 
-Lightweight dynamic DNS updater for **Hetzner DNS** using the official API.
+Dynamic DNS updater for **Hetzner DNS** using the new Cloud API.
 
-This tool updates a Hetzner DNS **A record** to match your current public IPv4 address.  
-Perfect for home servers, dynamic IP connections, or self-hosted services.
+This tool updates a Hetzner DNS **A record** to match your current public IPv4 address.
 
 ---
 
-## ✨ Features
+## Features
 
 - Updates an existing A record if IP changed
 - Creates the record if it does not exist
@@ -15,7 +14,7 @@ Perfect for home servers, dynamic IP connections, or self-hosted services.
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 - Python ≥ 3.10
 - A Hetzner DNS zone
@@ -26,7 +25,7 @@ Perfect for home servers, dynamic IP connections, or self-hosted services.
 
 ---
 
-## 🚀 Server usage (cron)
+## Server usage (cron)
 
 ### 1) Get the code onto the server
 
@@ -45,9 +44,9 @@ cp .env.example .env
 
 Fill in:
 
-- `ZONE_NAME` — your DNS zone (e.g. `example.com`)
-- `RECORD_NAME` — the record name inside the zone (e.g. `home` or `dyn`)
-- `API_TOKEN` — Hetzner API token with DNS read/write permissions
+- `ZONE_NAME` - your DNS zone (e.g. `example.com`)
+- `RECORD_NAME` - the record name inside the zone (e.g. `home` or `dyn`)
+- `API_TOKEN` - Hetzner API token with DNS read/write permissions
 
 ### 3) Install dependencies (recommended one-time step)
 
