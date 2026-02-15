@@ -1,2 +1,32 @@
 .idea/
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# Test / coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checker caches (optional)
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# OS noise (optional)
+.DS_Store
+Thumbs.db
